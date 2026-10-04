@@ -29,23 +29,24 @@ export default function DetailsScreen() {
   );
 }
 
+// Update the styles inside app/details.js
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#F5F0E6', padding: 20 },
+  container: { flex: 1, backgroundColor: COLORS.background, padding: 25 },
   card: { 
-    backgroundColor: '#fff', 
-    padding: 25, 
-    borderRadius: 12,
-    elevation: 3,
+    backgroundColor: COLORS.white, 
+    padding: 30, 
+    borderRadius: 16,
+    elevation: 5,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.1,
-    shadowRadius: 4,
-    marginBottom: 30
+    shadowRadius: 8,
+    marginBottom: 40
   },
-  title: { fontSize: 26, fontWeight: 'bold', color: '#333' },
-  price: { fontSize: 22, color: '#4A3B32', fontWeight: '600', marginTop: 10 },
-  divider: { height: 1, backgroundColor: '#E0E0E0', marginVertical: 20 },
-  sectionTitle: { fontSize: 18, fontWeight: 'bold', color: '#555', marginBottom: 10 },
-  description: { fontSize: 16, lineHeight: 24, color: '#666' },
-  buttonContainer: { borderRadius: 8, overflow: 'hidden' }
+  title: { fontSize: 28, fontWeight: 'bold', color: COLORS.textDark },
+  price: { fontSize: 24, color: COLORS.primary, fontWeight: '700', marginTop: 10 },
+  divider: { height: 1, backgroundColor: COLORS.border, marginVertical: 25 },
+  sectionTitle: { fontSize: 18, fontWeight: 'bold', color: COLORS.textLight, marginBottom: 12, textTransform: 'uppercase', letterSpacing: 1 },
+  description: { fontSize: 17, lineHeight: 26, color: COLORS.textDark },
+  buttonContainer: { borderRadius: 10, overflow: 'hidden' }
 });
