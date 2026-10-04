@@ -1,11 +1,13 @@
+// app/_layout.js
 import { Stack } from 'expo-router';
+import { COLORS } from './theme'; // Import theme
 
 export default function RootLayout() {
   return (
     <Stack
       screenOptions={{
-        headerStyle: { backgroundColor: '#4A3B32' },
-        headerTintColor: '#fff',
+        headerStyle: { backgroundColor: COLORS.primary },
+        headerTintColor: COLORS.white,
         headerTitleStyle: { fontWeight: 'bold' },
       }}
     >
