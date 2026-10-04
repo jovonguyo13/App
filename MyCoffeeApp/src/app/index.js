@@ -1,5 +1,7 @@
+// app/index.js
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Link } from 'expo-router'; 
+import { COLORS } from './theme'; // Import theme
 
 export default function HomeScreen() {
   return (
@@ -17,9 +19,9 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#F5F0E6' },
-  title: { fontSize: 28, fontWeight: 'bold', color: '#4A3B32', marginBottom: 10 },
-  subtitle: { fontSize: 16, color: '#7A6B5D', marginBottom: 30 },
-  button: { backgroundColor: '#4A3B32', paddingVertical: 12, paddingHorizontal: 30, borderRadius: 8 },
-  buttonText: { color: '#fff', fontSize: 16, fontWeight: 'bold' }
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.background },
+  title: { fontSize: 32, fontWeight: 'bold', color: COLORS.primary, marginBottom: 10 },
+  subtitle: { fontSize: 16, color: COLORS.textLight, marginBottom: 40 },
+  button: { backgroundColor: COLORS.primary, paddingVertical: 15, paddingHorizontal: 40, borderRadius: 25 },
+  buttonText: { color: COLORS.white, fontSize: 18, fontWeight: 'bold' }
 });

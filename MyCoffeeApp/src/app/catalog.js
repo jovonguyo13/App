@@ -10,7 +10,7 @@ const COFFEE_MENU = [
 
 export default function CatalogScreen() {
   const renderItem = ({ item }) => (
-    <Link 
+        <Link 
       href={{ 
         pathname: '/details', 
         params: { name: item.name, price: item.price, description: item.description } 
