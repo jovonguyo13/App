@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router'; 
+import { COLORS } from './theme';
 
 export default function DetailsScreen() {
   const { name, price, description } = useLocalSearchParams();
@@ -18,13 +19,12 @@ export default function DetailsScreen() {
         <Text style={styles.description}>{description}</Text>
       </View>
 
-      <View style={styles.buttonContainer}>
-        <Button 
-          title="Go Back to Menu" 
-          color="#4A3B32"
-          onPress={() => router.back()} 
-        />
-      </View>
+      <TouchableOpacity 
+        style={styles.buttonContainer} 
+        onPress={() => router.back()}
+      >
+        <Text style={styles.buttonText}>← Go Back to Menu</Text>
+      </TouchableOpacity>
     </View>
   );
 }
