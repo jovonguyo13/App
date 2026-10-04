@@ -42,25 +42,26 @@ export default function CatalogScreen() {
   );
 }
 
+// Update the styles inside app/catalog.js
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#F5F0E6' },
-  listPadding: { padding: 15 },
+  container: { flex: 1, backgroundColor: COLORS.background },
+  listPadding: { padding: 20 },
   itemContainer: { 
-    backgroundColor: '#fff', 
-    padding: 20, 
+    backgroundColor: COLORS.white, 
+    padding: 22, 
     marginBottom: 15, 
-    borderRadius: 10, 
+    borderRadius: 12, 
     flexDirection: 'row', 
     justifyContent: 'space-between',
     alignItems: 'center',
-    elevation: 3,
+    elevation: 4,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.1,
-    shadowRadius: 4,
+    shadowRadius: 6,
   },
-  itemName: { fontSize: 18, fontWeight: 'bold', color: '#333' },
-  itemPrice: { fontSize: 16, color: '#4A3B32', marginTop: 5 },
-  arrow: { fontSize: 20, color: '#ccc', fontWeight: 'bold' }
+  itemName: { fontSize: 20, fontWeight: 'bold', color: COLORS.textDark },
+  itemPrice: { fontSize: 16, color: COLORS.primary, marginTop: 5, fontWeight: '600' },
+  arrow: { fontSize: 22, color: COLORS.border, fontWeight: 'bold' }
 });
 
