@@ -9,7 +9,6 @@ export default function DetailsScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
-        {/* We add 'as string' to avoid TypeScript errors since useLocalSearchParams can return arrays */}
         <Text style={styles.title}>{name}</Text>
         <Text style={styles.price}>{price}</Text>
         
@@ -29,7 +28,6 @@ export default function DetailsScreen() {
   );
 }
 
-// Update the styles inside app/details.js
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: COLORS.background, padding: 25 },
   card: { 
@@ -48,5 +46,6 @@ const styles = StyleSheet.create({
   divider: { height: 1, backgroundColor: COLORS.border, marginVertical: 25 },
   sectionTitle: { fontSize: 18, fontWeight: 'bold', color: COLORS.textLight, marginBottom: 12, textTransform: 'uppercase', letterSpacing: 1 },
   description: { fontSize: 17, lineHeight: 26, color: COLORS.textDark },
-  buttonContainer: { borderRadius: 10, overflow: 'hidden' }
+  buttonContainer: { backgroundColor: COLORS.primary, paddingVertical: 15, borderRadius: 10, alignItems: 'center' },
+  buttonText: { color: COLORS.white, fontSize: 16, fontWeight: 'bold' }
 });

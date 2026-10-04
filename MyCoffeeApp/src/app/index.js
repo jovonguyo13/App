@@ -1,13 +1,13 @@
-// app/index.js
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Link } from 'expo-router'; 
-import { COLORS } from './theme'; // Import theme
 import { Ionicons } from '@expo/vector-icons';
+import { COLORS } from './theme';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Ionicons name="cafe" size={80} color={COLORS.primary} style={{ marginBottom: 20 }} />
+      
       <Text style={styles.title}>Daily Brew Coffee</Text>
       <Text style={styles.subtitle}>Your favorite local roastery.</Text>
       
